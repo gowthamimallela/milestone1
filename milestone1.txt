@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body style="background-color:pink; color:black; text-align: center;">
+<h1>Guess the number between 1 and 10.</h1><br><br><br>
+
+<input type="number" id="UserInput">
+<button id="Submit" onclick="randomNumberr()">click</button>
+<p id="Output"></p>
+<script>
+document.getElementById('Output').style.fontSize='30px';
+function randomNumberr() {
+let randomNumber = Math.floor(Math.random() * 10)+1;
+document.getElementById("Output").innerHTML = randomNumber;
+console.log(randomNumber);
+
+let UserInput = document.getElementById("UserInput").value;
+if (UserInput == randomNumber) {
+document.getElementById("Output").innerHTML = "Matched  "   +…
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="text-align:center ; background-color: pink;">
+    <h1 style="color: purple;">Get The Url</h1>
+    <h2>Click here to get url</h2>
+    <button type="button" onclick="getUrl();" color="blue">get URL</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').style.fontSize='30px';
+        document.getElementById('demo').style.color='blue';
+    let text="The url of this page is"+"<br><br>"+window.location.href;
+        function getUrl(){
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+
+</body>
+</html> 
+ 21  
+js3.html
+@@ -0,0 +1,21 @@
+<html>
+   <center> <body style="background-color: skyblue;">
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").style.fontSize='25px';
+            document.getElementById("demo").style.color='purple';
+            document.getElementById("demo").style.fontStyle='bold';
+            var x=23;
+            var y=900719925124744099n;
+            var s="hello";
+            var a=true;
+            var b;
+            var e=Symbol('hello');
+            var c=[1,2,3,4];
+            var d= function myFun(){};
+
+            document.getElementById("demo").innerHTML=typeof x +"<br><br>" + typeof y +"<br><br>" + typeof s +"<br><br>" + typeof a +"<br><br>" + typeof b +"<br><br>" + typeof c +"<br><br>" + typeof d +"<br><br>" ;
+
+        </script>
+    </body></center>
+</html> 
+ 23  
+js4.html
+@@ -0,0 +1,23 @@
+<html>
+    <body style="text-align: center; background-color: skyblue;" >
+        <h1>Enter circle radius</h1>
+        <input type="number" id="UserInput">
+       <button id="Submit" onclick="area()">click me</button>
+       <p id="demo"></p>
+       <script>
+        document.getElementById('demo').style.fontSize='30px';
+        document.getElementById('demo').style.color='purple';
+        document.getElementById('UserInput').style.color='purple';
+        function area()
+        {
+            let r = document.getElementById("UserInput").value;
+            let a=3.14*r*r;
+            let text="The Area of the circle is   "
+            document.getElementById("demo").innerHTML=text + a;
+
+
+        }
+       </script>
+
+    </body>
+</html> 
